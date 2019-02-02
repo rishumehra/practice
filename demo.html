@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+     <script type='text/javascript' src='js/keynavigation.js'></script>
+    <script>
+    var count=0;
+        function playPause(){
+            var player = document.getElementById('myPlayer');
+            if(count%2==0){
+                player.play();
+                document.getElementById('img_src').src="images/play.png";
+            }
+            else {
+                player.pause();
+                document.getElementById('img_src').src="images/pause.jpg";
+            }
+            count++;
+        }
+        window.onload =  function (){
+            var playPause = document.getElementById('play');
+            document.body.addEventListener("keydown");
+        }
+    </script>
+</head>
+<body>
+    <video id="myPlayer" style="margin-top:5%;" width="100%" controls autoplay src="http://upload.wikimedia.org/wikipedia/commons/transcoded/1/10/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm/Tears_of_Steel_in_4k_-_Official_Blender_Foundation_release.webm.480p.vp9.webm" type="video/mp4">
+    </video>
+    <center><button id='play' onclick="playPause();"><img id="img_src" src="images/play.png" style="width:60px;height: 40px;border:none;"></button></center>
+</body>
+</html>
