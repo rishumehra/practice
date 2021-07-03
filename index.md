@@ -1,6 +1,6 @@
 # Practice the docs
 
-This is a demo practice docs for *JS* and *Github* practice.
+This is a demo practice docs for **JS** and **Github** practice.
 
 ## What is Markdown?
 
@@ -19,7 +19,7 @@ Markdown is a language for creating docs. This follows certain styling to show c
 4. Numbered
 5. list
 
-*Now Bold*
+**Now Bold**
 
 _Italics_
 
